@@ -255,6 +255,23 @@
       opacity: 0.85;
     }
 
+    .logo-club-name {
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #fff;
+      border-left: 1.5px solid rgba(255,255,255,0.3);
+      padding-left: 0.75rem;
+      margin-left: 0.75rem;
+      transition: color 0.4s;
+    }
+
+    header.scrolled .logo-club-name {
+      color: var(--royal);
+      border-left-color: rgba(23,69,143,0.2);
+    }
+
     nav {
       display: flex;
       align-items: center;
@@ -1222,8 +1239,9 @@
   <!-- ── Header ── -->
   <header id="header">
     <div class="container">
-      <a href="/" class="logo" aria-label="Beaumont-Cherry Valley Rotary home">
+      <a href="./" class="logo" aria-label="Beaumont-Cherry Valley Rotary home">
         <img src="assets/rotary-logo-color-2019-simplified.svg" alt="Rotary International logo" class="logo-svg">
+        <span class="logo-club-name">Beaumont-<br>Cherry Valley</span>
       </a>
       <nav id="nav" role="navigation" aria-label="Main navigation">
         <a href="#events">Events</a>
